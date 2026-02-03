@@ -1,5 +1,5 @@
 // Navbar Active Indicator Animation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
     const indicator = document.querySelector('.nav-indicator');
     const navbar = document.querySelector('.navbar');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', updateIndicator);
 
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -100px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('aos-animate');
@@ -48,14 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
-  const toggle = document.getElementById("menuToggle");
-  const menu = document.getElementById("navMenu");
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("navMenu");
 
-  toggle.addEventListener("click", () => {
+toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
     menu.classList.toggle("show");
-  });
+});
 
-  // optional: close menu after clicking a link (mobile)
-  menu.querySelectorAll("a").forEach(link => {
+// close when clicking a link
+menu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => menu.classList.remove("show"));
-  });
+});
+
+// close when clicking outside
+document.addEventListener("click", () => {
+    menu.classList.remove("show");
+});

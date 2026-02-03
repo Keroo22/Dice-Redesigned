@@ -44,6 +44,7 @@ body {
 }
 
 .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -151,17 +152,20 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    transition: all 0.3s ease;
+    transform: translateY(0);
+    transition: transform var(--t-med), box-shadow var(--t-med), background-color var(--t-med), color var(--t-med);
     cursor: pointer;
     border: 2px solid transparent;
 }
 
 .btn-primary {
+    box-shadow: var(--shadow-soft);
     background-color: #1a1a1a;
     color: #ffffff;
 }
 
 .btn-primary:hover {
+    box-shadow: var(--shadow-mid);
     background-color: #333333;
     transform: translateY(-2px);
 }
@@ -173,6 +177,7 @@ body {
 }
 
 .btn-secondary:hover {
+    box-shadow: var(--shadow-soft);
     background-color: #1a1a1a;
     color: #ffffff;
     transform: translateY(-2px);
@@ -293,7 +298,8 @@ body {
 
     .menu-toggle {
         display: flex;
-        width: 150px;
+        margin-left: auto;
+        width: auto;
     }
 
     .nav-links {
@@ -304,8 +310,12 @@ body {
         background: white;
         flex-direction: column;
         gap: 0;
-        padding: 16px 0;
-        display: none;
+        padding: 10px 0;
+        display: flex;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform .25s ease, opacity .25s ease;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         border-top: 1px solid rgba(0, 0, 0, 0.06);
     }
@@ -317,7 +327,9 @@ body {
     }
 
     .nav-links.show {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .nav-links li a::after {
@@ -348,4 +360,34 @@ body {
         padding: 12px 24px;
         font-size: 14px;
     }
+}
+
+:root {
+    --ease: cubic-bezier(.2, .8, .2, 1);
+    --t-fast: 180ms;
+    --t-med: 320ms;
+
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-mid: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+a,
+button,
+.btn,
+.menu-toggle span,
+.nav-links {
+    transition-timing-function: var(--ease);
+}
+
+:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.35);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce){
+  *{
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -349,7 +349,6 @@ video{
         gap: 40px;
     }
 
-    /* أهم سطر: بدل عرض ثابت 530px */
     .overview-image {
         width: 100%;
         max-width: 530px;
