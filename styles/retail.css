@@ -1,0 +1,378 @@
+/* Page Hero */
+video{
+    position: absolute;
+    top: -78px;
+    left: 0;
+    height: 122vh;
+    width: auto;
+    opacity: 0.9;
+}
+
+.page-hero {
+    padding: 180px 0 100px; 
+    text-align: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.page-hero-content {
+    width: auto;
+    height: 98vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40%;    
+    left:  33%;
+}
+
+.page-hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.page-hero-subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Retail Introduction */
+.retail-intro {
+    padding: 100px 0 60px;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content .section-title {
+    margin-bottom: 32px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+/* Statistics Section */
+.retail-stats {
+    padding: 60px 0 100px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.stat-card {
+    background-color: #f8f9fa;
+    padding: 48px 32px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.stat-icon {
+    width: 72px;
+    height: 72px;
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: #ffffff;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1;
+    display: block;
+}
+
+.stat-number-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.stat-number-wrapper .stat-number {
+    margin-bottom: 0;
+}
+
+.stat-suffix {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.stat-label {
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.stat-description {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Brands Overview */
+.brands-overview {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.brand-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.brand-image {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+}
+
+.brand-card:nth-child(1) .brand-image {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.brand-card:nth-child(2) .brand-image {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.brand-card:nth-child(3) .brand-image {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    padding: 24px 24px 12px;
+}
+
+.brand-description {
+    font-size: 15px;
+    color: #666666;
+    padding: 0 24px 24px;
+    line-height: 1.6;
+}
+
+/* Shop Now Section */
+.shop-now-section {
+    position: relative;
+    padding: 120px 0;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.shop-now-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(26, 26, 26, 0.7);
+}
+
+.shop-now-content {
+    position: relative;
+    z-index: 1;
+}
+
+.shop-now-title {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.shop-now-text {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-large {
+    padding: 18px 48px;
+    font-size: 16px;
+}
+
+.shop-now-section .btn-primary {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.shop-now-section .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+
+    video{
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page-hero{
+        height: auto;
+        min-height: 100vh;
+        padding: 160px 0 110px;
+    }
+
+    .page-hero-content{
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .page-hero-title {
+        font-size: 42px;
+    }
+
+    .page-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .shop-now-title {
+        font-size: 38px;
+    }
+
+    .shop-now-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    video{
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page-hero {
+        padding: 140px 0 80px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .page-hero-content{
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        width: 100%;
+        padding: 0 14px;
+        margin: 0 auto;
+    }
+
+    .page-hero-title {
+        font-size: 32px;
+    }
+
+    .page-hero-subtitle {
+        font-size: 16px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+
+    .stat-number-wrapper .stat-number {
+        font-size: 42px;
+    }
+
+    .stat-suffix {
+        font-size: 24px;
+    }
+
+    .shop-now-section {
+        padding: 80px 0;
+    }
+
+    .shop-now-title {
+        font-size: 28px;
+    }
+
+    .shop-now-text {
+        font-size: 16px;
+    }
+
+    .btn-large {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,434 @@
+/* =========================
+   HERO SECTION
+========================= */
+video{
+    position: absolute;
+    top: 0;
+    height: 122vh;
+    width: auto;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100vh;
+    padding: 180px 0 120px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(26, 26, 26, 0.03) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   COMPANY OVERVIEW
+========================= */
+.company-overview {
+    padding: 100px 0;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.overview-text p {
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.overview-image {
+    width: 530px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   IMPACT NUMBERS
+========================= */
+.impact-numbers {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.number-card {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.number-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.number {
+    font-size: 56px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.number-suffix {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    font-size: 56px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.number-suffix span:last-child {
+    font-size: 32px;
+}
+
+.number-label {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline-section {
+    padding: 100px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.timeline-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #000000;
+    animation: timeline-progress 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes timeline-progress {
+    to {
+        width: 100%;
+    }
+}
+
+.timeline-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 4px solid #1a1a1a;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.3);
+    box-shadow: 0 0 0 8px rgba(26, 26, 26, 0.1);
+}
+
+.timeline-content {
+    padding: 0 12px;
+}
+
+.timeline-year {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.timeline-text {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CEO SECTION
+========================= */
+.ceo-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.ceo-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ceo-image {
+    width: 100%;
+    height: 500px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ceo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ceo-text {
+    position: relative;
+}
+
+.ceo-quote-mark {
+    font-size: 120px;
+    font-weight: 700;
+    color: #e0e0e0;
+    line-height: 1;
+    margin-bottom: -40px;
+}
+
+.ceo-quote {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.ceo-info {
+    padding-top: 24px;
+    border-top: 2px solid #1a1a1a;
+}
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.ceo-title {
+    font-size: 16px;
+    color: #666666;
+}
+
+
+/* =========================
+   RESPONSIVE (TABLETS)
+========================= */
+@media (max-width: 968px) {
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero {
+        padding: 140px 0 100px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* أهم سطر: بدل عرض ثابت 530px */
+    .overview-image {
+        width: 100%;
+        max-width: 530px;
+        height: auto;
+    }
+
+    .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .timeline-items {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .ceo-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ceo-image {
+        height: 400px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE (PHONES)
+========================= */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 120px 0 80px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    /* أزرار الهيرو تبقى تحت بعض */
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .number {
+        font-size: 42px;
+    }
+
+    .number-suffix {
+        font-size: 42px;
+    }
+
+    .number-suffix span:last-child {
+        font-size: 24px;
+    }
+
+    .ceo-quote {
+        font-size: 18px;
+    }
+
+    .company-overview,
+    .impact-numbers,
+    .timeline-section,
+    .ceo-section {
+        padding: 70px 0;
+    }
+}
