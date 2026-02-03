@@ -3,7 +3,7 @@
 ========================= */
 .page-hero {
     padding: 180px 0 100px;
-    background-image: url(images/investback.jpg);
+    background-image: url(../images/investback.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
