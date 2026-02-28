@@ -198,6 +198,7 @@ video{
 
 /* Shop Now Section */
 .shop-now-section {
+    border: #000000 1px solid;
     position: relative;
     padding: 120px 0;
     background-image: url('');
@@ -213,7 +214,8 @@ video{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(26, 26, 26, 0.7);
+    background: url(../images/dice-1-scaled.jpg)
+              center / cover no-repeat fixed;
 }
 
 .shop-now-content {
@@ -224,14 +226,14 @@ video{
 .shop-now-title {
     font-size: 52px;
     font-weight: 800;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
 
 .shop-now-text {
     font-size: 20px;
-    color: #f0f0f0;
+    color: #000000;
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
