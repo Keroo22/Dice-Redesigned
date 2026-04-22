@@ -214,7 +214,7 @@ video{
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../images/dice-1-scaled.jpg)
+    background: url(../images/Banner-Home-Page-2.webp)
               center / cover no-repeat fixed;
 }
 
@@ -226,14 +226,14 @@ video{
 .shop-now-title {
     font-size: 52px;
     font-weight: 800;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
 
 .shop-now-text {
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;

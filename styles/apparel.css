@@ -94,8 +94,8 @@
 
 .facilities-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
     margin-top: 60px;
 }
 
@@ -251,6 +251,7 @@
 }
 
 .capabilities-grid {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
@@ -279,6 +280,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
+    margin-left: 39%;
     color: #1a1a1a;
 }
 
