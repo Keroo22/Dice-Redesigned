@@ -116,6 +116,8 @@ video{
 }
 
 .capability-card {
+    text-align: center;
+    justify-content: center;
     background-color: #f8f9fa;
     padding: 40px 32px;
     border-radius: 12px;
@@ -136,6 +138,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 38%;
     margin-bottom: 24px;
     color: #1a1a1a;
 }
