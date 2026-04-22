@@ -1,9 +1,10 @@
 /* Page Hero */
 .container video {
     position: absolute;
+    margin-top: -60px;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
     opacity: 0.85;
     z-index: 0;
