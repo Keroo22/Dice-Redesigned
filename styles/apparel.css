@@ -1,58 +1,58 @@
-/* Page Hero */
+/* =========================
+   PAGE HERO
+========================= */
+.page-hero {
+    position: relative;
+    padding: 250px 0;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+}
+
 .container video {
     position: absolute;
-    margin-top: -60px;
     inset: 0;
     width: 100%;
-    height: 110%;
+    height: 100%;
     object-fit: cover;
     opacity: 0.85;
     z-index: 0;
 }
 
-.page-hero {
-    padding: 250px 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-    text-align: center;
-    height: 100vh;
-}
-
 .page-hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .page-hero-title {
-    position: relative;
     font-size: 56px;
     font-weight: 1000;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 20px;
-    letter-spacing: -1px;
-    opacity: 1;
 }
 
 .page-hero-subtitle {
-    position: relative;
     font-size: 20px;
-    color: #ffffff;
+    color: #fff;
     line-height: 1.6;
 }
 
 .humberger {
-    position: relative;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
     height: 105px;
-    margin-top: 0px;
     margin-bottom: 90px;
 }
 
-/* Apparel Introduction */
+/* =========================
+   INTRO
+========================= */
 .apparel-intro {
-    position: relative;
-    padding: -100px 0;
-    background-color: #ffffff;
+    padding: 80px 0;
+    background: #fff;
 }
 
 .intro-content {
@@ -76,7 +76,6 @@
 .intro-image {
     width: 100%;
     height: 370px;
-    background-color: #f0f0f0;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -87,50 +86,52 @@
     object-fit: cover;
 }
 
+/* =========================
+   FACILITIES
+========================= */
 .facilities-section {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .facilities-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 40px;
     margin-top: 60px;
 }
 
 .facility-card {
-    background-color: #ffffff;
+    background: #fff;
     padding: 48px 32px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .facility-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .facility-number {
     font-size: 40px;
     font-weight: 800;
-    color: #1a1a1a;
     margin-bottom: 16px;
-    line-height: 1;
 }
 
 .facility-label {
     font-size: 15px;
-    color: #666666;
-    font-weight: 500;
-    line-height: 1.5;
+    color: #666;
 }
 
-/* Capabilities */
+/* =========================
+   CAPABILITIES
+========================= */
 .capabilities {
     padding: 100px 0;
+    background: #f8f9fa;
 }
 
 .capabilities-grid {
@@ -138,55 +139,51 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 60px;
+    text-align: center;
 }
 
 .capability-card {
-    background-color: #f8f9fa;
+    background: #fff;
     padding: 40px 32px;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .capability-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .capability-icon {
     width: 64px;
     height: 64px;
-    background-color: #ffffff;
+    background: #f5f7fa;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
-    color: #1a1a1a;
-}
-
-.capability-card:hover .capability-icon {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    margin: 0 auto 24px auto;
 }
 
 .capability-title {
     font-size: 20px;
     font-weight: 700;
-    color: #1a1a1a;
     margin-bottom: 12px;
 }
 
 .capability-description {
     font-size: 15px;
-    color: #666666;
+    color: #666;
     line-height: 1.7;
 }
 
-/* Quality Section */
+/* =========================
+   QUALITY
+========================= */
 .quality-section {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .quality-content {
@@ -194,10 +191,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-}
-
-.quality-text h2 {
-    margin-bottom: 24px;
 }
 
 .quality-text p {
@@ -209,11 +202,9 @@
 
 .quality-list {
     list-style: none;
-    padding: 0;
 }
 
 .quality-list li {
-    color: #1a1a1a;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 0 12px 32px;
@@ -221,18 +212,15 @@
 }
 
 .quality-list li::before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
-    color: #1a1a1a;
     font-weight: 700;
-    font-size: 18px;
 }
 
 .quality-image {
     width: 100%;
     height: 400px;
-    background-color: #e0e0e0;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -243,61 +231,9 @@
     object-fit: cover;
 }
 
-
-/* Capabilities */
-.capabilities {
-    padding: 100px 0;
-    background-color: #f8f9fa;
-}
-
-.capabilities-grid {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin-top: 60px;
-}
-
-.capability-card {
-    background-color: #ffffff;
-    padding: 40px 32px;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.capability-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.capability-icon {
-    width: 64px;
-    height: 64px;
-    background-color: #f5f7fa;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    margin-left: 39%;
-    color: #1a1a1a;
-}
-
-.capability-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 12px;
-}
-
-.capability-description {
-    font-size: 15px;
-    color: #666666;
-    line-height: 1.7;
-}
-
-/* Brands Section */
+/* =========================
+   BRANDS
+========================= */
 .brands-section {
     padding: 100px 0;
     overflow: hidden;
@@ -306,7 +242,6 @@
 .brands-slider {
     margin-top: 60px;
     overflow: hidden;
-    position: relative;
 }
 
 .brands-track {
@@ -324,14 +259,8 @@
 }
 
 @keyframes scroll-brands {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(var(--brands-scroll-distance));
-    }
-
+    from { transform: translateX(0); }
+    to { transform: translateX(var(--brands-scroll-distance)); }
 }
 
 .brands-track:hover {
@@ -345,38 +274,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background: #fff;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.brand-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .brand-logo img {
     width: 200px;
 }
 
-/* Responsive Design */
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 968px) {
-
-    .container video {
-        top: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
     .page-hero {
-        height: auto;
-        min-height: 100vh;
         padding: 180px 0 120px;
-    }
-
-    .page-hero-content {
-        padding: 0 16px;
     }
 
     .page-hero-title {
@@ -387,14 +298,23 @@
         font-size: 18px;
     }
 
-    .intro-content {
+    .intro-content,
+    .quality-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .capabilities-grid {
+    .facilities-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quality-image {
+        height: 300px;
     }
 
     .brands-track {
@@ -413,23 +333,12 @@
     }
 }
 
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 480px) {
-
-    .container video {
-        top: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
     .page-hero {
         padding: 140px 0 80px;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .page-hero-content {
-        padding: 0 14px;
     }
 
     .page-hero-title {
@@ -445,8 +354,20 @@
         margin-bottom: 50px;
     }
 
+    .facilities-grid,
     .capabilities-grid {
         grid-template-columns: 1fr;
+    }
+
+    .facility-card,
+    .capability-card {
+        padding: 24px 18px;
+    }
+
+    .intro-image,
+    .quality-image {
+        height: 220px;
+        border-radius: 8px;
     }
 
     .brand-item {
@@ -460,9 +381,5 @@
 
     .brand-logo img {
         width: 140px;
-    }
-
-    .brand-logo {
-        font-size: 16px;
     }
 }
