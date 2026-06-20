@@ -312,7 +312,15 @@
 .brands-track {
     display: flex;
     gap: 60px;
-    animation: scroll-brands 30s linear infinite;
+    --brand-card-width: 200px;
+    --brand-gap: 60px;
+    --brand-count: 11;
+    --brands-scroll-distance: calc((var(--brand-card-width) + var(--brand-gap)) * var(--brand-count) * -1);
+    will-change: transform;
+}
+
+.brands-track.is-ready {
+    animation: scroll-brands 60s linear infinite;
 }
 
 @keyframes scroll-brands {
@@ -321,7 +329,7 @@
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(var(--brands-scroll-distance));
     }
 
 }
@@ -391,6 +399,8 @@
 
     .brands-track {
         gap: 40px;
+        --brand-card-width: 160px;
+        --brand-gap: 40px;
     }
 
     .brand-item {
@@ -442,6 +452,10 @@
     .brand-item {
         width: 140px;
         height: 90px;
+    }
+
+    .brands-track {
+        --brand-card-width: 140px;
     }
 
     .brand-logo img {
